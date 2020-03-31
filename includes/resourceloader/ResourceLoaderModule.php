@@ -740,7 +740,7 @@ abstract class ResourceLoaderModule implements LoggerAwareInterface {
 		if ( count( $stylePairs ) ) {
 			// If we are in debug mode without &only= set, we'll want to return an array of URLs
 			// See comment near shouldIncludeScripts() for more details
-			if ( $context->getDebug() && !$context->getOnly() && $this->supportsURLLoading() ) {
+			if ( true && !$context->getOnly() && $this->supportsURLLoading() ) {
 				$styles = [
 					'url' => $this->getStyleURLsForDebug( $context )
 				];
